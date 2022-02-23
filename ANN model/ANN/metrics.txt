@@ -1,0 +1,4 @@
+accuracy,  epochs,  f1 score, units, layers, inititalizer
+0.8225,20,0.40536013400335,6, 2, he-uniform
+0.818,20,0.3767123287671233,10,2,he-uniform
+
