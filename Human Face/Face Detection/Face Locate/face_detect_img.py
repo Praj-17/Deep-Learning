@@ -1,10 +1,7 @@
 import cv2
 import face_recognition
-
 image= cv2.imread('1.jpg')
-cv2.imshow("image", image)
-cv2.waitKey(0)
-all_face_locations = face_recognition.face_locations(image,model = 'hog')
+all_face_locations = face_recognition.face_locations(image,model = 'cnn')
 
 print(f"There are {len(all_face_locations)} faces in the image")
 
