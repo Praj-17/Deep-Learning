@@ -25,12 +25,14 @@ def detect_eye(color):
   return dimensions
 
 
-frame = cv2.imread("E:\\CODING PLAYGROUND\\CODE\\Deep Leaning\\Human Face\\Gallery\\eye2.jpeg")
+# frame = cv2.imread("E:\\CODING PLAYGROUND\\CODE\\Deep Leaning\\Human Face\\Gallery\\1.jpeg")
+frame = cv2.imread("2.jpeg")
 
 faces =face_recognition.face_locations(frame,model='hog')
 gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
-if len(faces) == 0:
-    detect_eye(frame)
+print(len(faces))
+
+if len(faces) == 0:faces = detect_eye(frame)
 
 for (x,y,w,h) in faces:
     cv2.rectangle(frame,(x,y),(x+w,y+h),(0,255,255),2)
