@@ -9,7 +9,7 @@ predictor = dlib.shape_predictor("./shape_predictor_68_face_landmarks.dat")
 
 
 
-frame = cv2.imread("Images\\girl1.jpg")
+frame = cv2.imread("Images\\demo.jpeg")
 gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
 faces = detector(gray)
