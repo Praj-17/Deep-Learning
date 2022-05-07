@@ -23,7 +23,7 @@ class Data_builder:
         if check == False:  
             print(f"Creating directory for {self.name}") 
             os.mkdir(f"{self.path}")
-            for _ in range(1200):
+            for _ in range(10):
                 ret,test_img=cap.read()
                 if not ret :
                     continue

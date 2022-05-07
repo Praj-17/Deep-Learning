@@ -3,11 +3,12 @@ from DataBuilder.augmentation import Augmentation
 import os
 
 
+person = "Sakshi"
+print(person)
+data_builder = Data_builder(person)
+data_builder.get_images()
 
-for person in os.listdir("images"):
-    print(person)
-    data_builder = Data_builder(person)
-    Augmentation(f"{data_builder.path}\\",f"{data_builder.path}\\","aug",15)
+# Augmentation(f"{data_builder.path}\\",f"{data_builder.path}\\","aug",15)
     
    
 
