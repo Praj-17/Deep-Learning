@@ -38,7 +38,7 @@ def main():
         print('No faces found in this image.')
 
     if args.save_dir:
-        basename = os.path.basename(filename)
+        basename = os.pabth.asename(filename)
         name = basename.split('.')[0]
         ext = basename.split('.')[1]
         img.save('{}_tagged.{}'.format(name, ext))
